@@ -1,0 +1,5 @@
+<div class="col-6">
+  <app-textfield #apptextfield></app-textfield>
+  <app-calc #appcalc (myNewEvent)="apptextfield.displayResult($event)"></app-calc>
+  <app-buttons (myEvent)="appcalc.calculate($event)"></app-buttons>
+</div>
